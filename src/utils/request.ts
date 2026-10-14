@@ -120,6 +120,7 @@ export class Request {
                     if (window.location.pathname !== '/login') {
                         const redirect = `${window.location.pathname}${window.location.search}${window.location.hash}`;
                         window.location.replace(`/login?redirect=${encodeURIComponent(redirect)}`);
+                        // encodeURIComponent 是 JavaScript 中的一个全局函数，用于对 URI 的组成部分进行编码，把特殊字符转换成 UTF-8 百分号编码（percent-encoding）。
                     }
                 }
 

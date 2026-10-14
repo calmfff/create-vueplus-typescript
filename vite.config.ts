@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => {
         base: '/',
         plugins: [
             vue(),
-            mockDevServerPlugin(),
+            mockDevServerPlugin({ prefix: '/api' }), // 启动插件
             AutoImport({
                 imports: [
                     'vue',
